@@ -72,13 +72,21 @@ table {
 td,
 th {
   margin: 0;
-  padding: 0.5rem;
+  padding: 0.6rem 1.2rem;
   border-bottom: 1px solid #e6e6e6;
   text-align: left;
 }
 
 th .content {
   font-weight: 700;
+}
+
+tr {
+  width: 100%;
+}
+
+tr .selected {
+  background-color: blue;
 }
 
 .content {
@@ -88,6 +96,10 @@ th .content {
   padding: 0.5rem 1rem;
   width: 100%;
   display: flex;
+}
+
+tr .selected {
+  background-color: lightgray;
 }
 
 .content:focus {

@@ -39,9 +39,9 @@ const App = () => {
         // eslint-disable-next-line array-callback-return
         users?.filter((user) => {
           if (
-            user.name?.includes(query) ||
-            user.email?.includes(query) ||
-            user.role?.includes(query)
+            user.name?.toLowerCase().includes(query.toLowerCase()) ||
+            user.email?.toLowerCase().includes(query.toLowerCase()) ||
+            user.role?.toLowerCase().includes(query.toLowerCase())
           ) {
             return user;
           }
